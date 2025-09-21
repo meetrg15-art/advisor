@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Hub - CareerPath Navigator</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Accelerate your career with personalized learning pathways, skill-based tracks, and industry certifications. Bridge skill gaps with expert-curated content." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fcareerpath3634back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background">
+    <!-- Navigation Header -->
+    <nav class="bg-surface shadow-soft sticky top-0 z-50">
+        <div class="container-custom">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="w-8 h-8 text-primary mr-3" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 2L20 10L28 10L22 16L24 24L16 20L8 24L10 16L4 10L12 10L16 2Z"/>
+                        <circle cx="16" cy="16" r="3" fill="white"/>
+                    </svg>
+                    <span class="text-xl font-bold text-primary">CareerPath Navigator</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Home</a>
+                    <a href="skills_assessment_portal.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Skills Assessment</a>
+                    <a href="opportunity_marketplace.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Career Explorer</a>
+                    <a href="learning_hub.html" class="text-primary font-semibold">Learning Hub</a>
+                    <a href="community_network.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Community</a>
+                    <a href="personal_dashboard.html" class="btn-primary">Dashboard</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-surface border-t border-border-light">
+                    <a href="homepage.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Home</a>
+                    <a href="skills_assessment_portal.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Skills Assessment</a>
+                    <a href="opportunity_marketplace.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Career Explorer</a>
+                    <a href="learning_hub.html" class="block px-3 py-2 text-primary font-semibold">Learning Hub</a>
+                    <a href="community_network.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Community</a>
+                    <a href="personal_dashboard.html" class="block px-3 py-2 text-primary font-semibold">Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-secondary-50 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5"></div>
+        <div class="container-custom relative z-10 py-16 lg:py-24">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="text-center lg:text-left">
+                    <h1 class="hero-text text-gradient mb-6 animation-fade-in">
+                        Accelerate Your Career Growth
+                    </h1>
+                    <p class="text-xl text-text-secondary mb-8 max-w-2xl animation-slide-up">
+                        Bridge skill gaps with personalized learning pathways, industry certifications, and expert-curated content designed for busy professionals.
+                    </p>
+                    
+                    <!-- Quick Stats -->
+                    <div class="flex flex-col sm:flex-row gap-6 mb-8 text-sm text-text-secondary animation-slide-up">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-success rounded-full animate-pulse mr-2"></div>
+                            <span><strong class="text-primary">2,847</strong> courses available</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 text-warning mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <span><strong class="text-primary">4.8/5</strong> average rating</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 text-secondary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span><strong class="text-primary">15 min</strong> average lesson</span>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 animation-slide-up">
+                        <button class="btn-primary" id="start-learning-btn">
+                            <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M19 10a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Start Learning Journey
+                        </button>
+                        <button class="btn-outline" id="browse-courses-btn">
+                            <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                            Browse All Courses
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Learning Progress Preview -->
+                <div class="bg-surface rounded-2xl shadow-overlay p-8 animation-slide-up">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-text-primary mb-2">Your Learning Progress</h3>
+                        <p class="text-text-secondary">Continue where you left off</p>
+                    </div>
+                    
+                    <!-- Current Course -->
+                    <div class="mb-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="font-semibold text-text-primary">Advanced Data Analysis</h4>
+                            <span class="text-sm text-primary font-semibold">68% Complete</span>
+                        </div>
+                        <div class="w-full bg-border-light rounded-full h-2 mb-3">
+                            <div class="bg-primary h-2 rounded-full transition-all duration-300" style="width: 68%"></div>
+                        </div>
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>3 lessons remaining • ~45 min</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Learning Streak -->
+                    <div class="bg-warning-50 border border-warning-100 rounded-lg p-4 mb-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <svg class="w-6 h-6 text-warning mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-warning-600">7-Day Streak!</h4>
+                                    <p class="text-sm text-warning-700">Keep it up to earn bonus XP</p>
+                                </div>
+                            </div>
+                            <div class="text-2xl font-bold text-warning">🔥</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Actions -->
+                    <div class="grid grid-cols-2 gap-3">
+                        <button class="btn-primary text-sm py-2">Continue Learning</button>
+                        <button class="btn-outline text-sm py-2">View All Courses</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Pathways Filter -->
+    <section class="section-padding bg-surface">
+        <div class="container-custom">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Choose Your Learning Path
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Personalized educational journeys designed to bridge skill gaps and accelerate career advancement
+                </p>
+            </div>
+            
+            <!-- Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="filter-tab active" data-filter="all">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                    </svg>
+                    All Paths
+                </button>
+                <button class="filter-tab" data-filter="skill-based">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                    </svg>
+                    Skill-Based
+                </button>
+                <button class="filter-tab" data-filter="certifications">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                    </svg>
+                    Certifications
+                </button>
+                <button class="filter-tab" data-filter="career-transition">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                    Career Transition
+                </button>
+                <button class="filter-tab" data-filter="micro-learning">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    Micro-Learning
+                </button>
+            </div>
+            
+            <!-- Learning Paths Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="learning-paths-grid">
+                <!-- Data Science Path -->
+                <div class="learning-path-card" data-category="skill-based">
+                    <div class="card group hover:shadow-celebration transition-all duration-300 h-full">
+                        <div class="relative mb-6">
+                            <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Data Science Learning Path" class="w-full h-48 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                Skill-Based
+                            </div>
+                            <div class="absolute top-4 right-4 bg-surface/90 backdrop-blur-sm rounded-full p-2">
+                                <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-text-primary mb-3">Complete Data Science Mastery</h3>
+                        <p class="text-text-secondary mb-4">From Python basics to machine learning deployment. Build portfolio projects and land your first data science role.</p>
+                        
+                        <!-- Path Details -->
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Duration:</span>
+                                <span class="font-semibold text-text-primary">6-8 months</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Skill Level:</span>
+                                <span class="font-semibold text-warning">Intermediate</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Career Impact:</span>
+                                <span class="font-semibold text-success">High</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Skills Tags -->
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-primary-50 text-primary px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="bg-primary-50 text-primary px-3 py-1 rounded-full text-sm">SQL</span>
+                            <span class="bg-primary-50 text-primary px-3 py-1 rounded-full text-sm">Machine Learning</span>
+                        </div>
+                        
+                        <!-- Progress Bar -->
+                        <div class="mb-4">
+                            <div class="flex justify-between text-sm text-text-secondary mb-2">
+                                <span>Progress</span>
+                                <span>0/24 modules</span>
+                            </div>
+                            <div class="w-full bg-border-light rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-primary w-full group-hover:bg-primary-700 transition-colors duration-300">
+                            Start Learning Path
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- AWS Certification Path -->
+                <div class="learning-path-card" data-category="certifications">
+                    <div class="card group hover:shadow-celebration transition-all duration-300 h-full">
+                        <div class="relative mb-6">
+                            <img src="https://images.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_1280.jpg" alt="AWS Certification Path" class="w-full h-48 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                Certification
+                            </div>
+                            <div class="absolute top-4 right-4 bg-surface/90 backdrop-blur-sm rounded-full p-2">
+                                <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-text-primary mb-3">AWS Solutions Architect</h3>
+                        <p class="text-text-secondary mb-4">Master cloud architecture and earn your AWS certification. Includes hands-on labs and exam preparation.</p>
+                        
+                        <!-- Path Details -->
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Duration:</span>
+                                <span class="font-semibold text-text-primary">3-4 months</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Skill Level:</span>
+                                <span class="font-semibold text-warning">Advanced</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Certification:</span>
+                                <span class="font-semibold text-success">AWS Official</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Skills Tags -->
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-secondary-50 text-secondary px-3 py-1 rounded-full text-sm">AWS</span>
+                            <span class="bg-secondary-50 text-secondary px-3 py-1 rounded-full text-sm">Cloud Architecture</span>
+                            <span class="bg-secondary-50 text-secondary px-3 py-1 rounded-full text-sm">DevOps</span>
+                        </div>
+                        
+                        <!-- Progress Bar -->
+                        <div class="mb-4">
+                            <div class="flex justify-between text-sm text-text-secondary mb-2">
+                                <span>Progress</span>
+                                <span>5/18 modules</span>
+                            </div>
+                            <div class="w-full bg-border-light rounded-full h-2">
+                                <div class="bg-secondary h-2 rounded-full transition-all duration-300" style="width: 28%"></div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-secondary w-full group-hover:bg-secondary-700 transition-colors duration-300">
+                            Continue Learning
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Career Transition Path -->
+                <div class="learning-path-card" data-category="career-transition">
+                    <div class="card group hover:shadow-celebration transition-all duration-300 h-full">
+                        <div class="relative mb-6">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Career Transition Path" class="w-full h-48 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 bg-warning text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                Career Transition
+                            </div>
+                            <div class="absolute top-4 right-4 bg-surface/90 backdrop-blur-sm rounded-full p-2">
+                                <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-text-primary mb-3">Marketing to Product Management</h3>
+                        <p class="text-text-secondary mb-4">Leverage your marketing background to transition into product management. Build the skills that matter most.</p>
+                        
+                        <!-- Path Details -->
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Duration:</span>
+                                <span class="font-semibold text-text-primary">4-5 months</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Skill Level:</span>
+                                <span class="font-semibold text-warning">Intermediate</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Success Rate:</span>
+                                <span class="font-semibold text-success">87%</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Skills Tags -->
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-warning-50 text-warning px-3 py-1 rounded-full text-sm">Product Strategy</span>
+                            <span class="bg-warning-50 text-warning px-3 py-1 rounded-full text-sm">Analytics</span>
+                            <span class="bg-warning-50 text-warning px-3 py-1 rounded-full text-sm">User Research</span>
+                        </div>
+                        
+                        <!-- Progress Bar -->
+                        <div class="mb-4">
+                            <div class="flex justify-between text-sm text-text-secondary mb-2">
+                                <span>Progress</span>
+                                <span>0/16 modules</span>
+                            </div>
+                            <div class="w-full bg-border-light rounded-full h-2">
+                                <div class="bg-warning h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        
+                        <button class="bg-warning text-white px-6 py-3 rounded-lg font-semibold w-full hover:bg-warning-600 transition-colors duration-300">
+                            Start Transition
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Micro-Learning Path -->
+                <div class="learning-path-card" data-category="micro-learning">
+                    <div class="card group hover:shadow-celebration transition-all duration-300 h-full">
+                        <div class="relative mb-6">
+                            <img src="https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Micro-Learning Path" class="w-full h-48 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                Micro-Learning
+                            </div>
+                            <div class="absolute top-4 right-4 bg-surface/90 backdrop-blur-sm rounded-full p-2">
+                                <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-text-primary mb-3">Daily Leadership Skills</h3>
+                        <p class="text-text-secondary mb-4">Build leadership capabilities with 10-minute daily lessons. Perfect for busy professionals on the go.</p>
+                        
+                        <!-- Path Details -->
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Duration:</span>
+                                <span class="font-semibold text-text-primary">10 min/day</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Skill Level:</span>
+                                <span class="font-semibold text-warning">All Levels</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Format:</span>
+                                <span class="font-semibold text-success">Mobile-First</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Skills Tags -->
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-accent-50 text-accent px-3 py-1 rounded-full text-sm">Leadership</span>
+                            <span class="bg-accent-50 text-accent px-3 py-1 rounded-full text-sm">Communication</span>
+                            <span class="bg-accent-50 text-accent px-3 py-1 rounded-full text-sm">Team Building</span>
+                        </div>
+                        
+                        <!-- Progress Bar -->
+                        <div class="mb-4">
+                            <div class="flex justify-between text-sm text-text-secondary mb-2">
+                                <span>Progress</span>
+                                <span>12/30 lessons</span>
+                            </div>
+                            <div class="w-full bg-border-light rounded-full h-2">
+                                <div class="bg-accent h-2 rounded-full transition-all duration-300" style="width: 40%"></div>
+                            </div>
+                        </div>
+                        
+                        <button class="bg-accent text-white px-6 py-3 rounded-lg font-semibold w-full hover:bg-accent-700 transition-colors duration-300">
+                            Continue Daily Practice
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- UX Design Skills Path -->
+                <div class="learning-path-card" data-category="skill-based">
+                    <div class="card group hover:shadow-celebration transition-all duration-300 h-full">
+                        <div class="relative mb-6">
+                            <img src="https://images.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="UX Design Path" class="w-full h-48 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                Skill-Based
+                            </div>
+                            <div class="absolute top-4 right-4 bg-surface/90 backdrop-blur-sm rounded-full p-2">
+                                <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-text-primary mb-3">Complete UX Design Bootcamp</h3>
+                        <p class="text-text-secondary mb-4">From user research to prototyping. Build a portfolio that gets you hired as a UX designer.</p>
+                        
+                        <!-- Path Details -->
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Duration:</span>
+                                <span class="font-semibold text-text-primary">5-6 months</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Skill Level:</span>
+                                <span class="font-semibold text-warning">Beginner</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Portfolio Projects:</span>
+                                <span class="font-semibold text-success">5 Projects</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Skills Tags -->
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-primary-50 text-primary px-3 py-1 rounded-full text-sm">Figma</span>
+                            <span class="bg-primary-50 text-primary px-3 py-1 rounded-full text-sm">User Research</span>
+                            <span class="bg-primary-50 text-primary px-3 py-1 rounded-full text-sm">Prototyping</span>
+                        </div>
+                        
+                        <!-- Progress Bar -->
+                        <div class="mb-4">
+                            <div class="flex justify-between text-sm text-text-secondary mb-2">
+                                <span>Progress</span>
+                                <span>0/22 modules</span>
+                            </div>
+                            <div class="w-full bg-border-light rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-primary w-full group-hover:bg-primary-700 transition-colors duration-300">
+                            Start Learning Path
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Google Analytics Certification -->
+                <div class="learning-path-card" data-category="certifications">
+                    <div class="card group hover:shadow-celebration transition-all duration-300 h-full">
+                        <div class="relative mb-6">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Google Analytics Certification" class="w-full h-48 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                Certification
+                            </div>
+                            <div class="absolute top-4 right-4 bg-surface/90 backdrop-blur-sm rounded-full p-2">
+                                <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-text-primary mb-3">Google Analytics 4 Mastery</h3>
+                        <p class="text-text-secondary mb-4">Master GA4 and earn your Google certification. Essential for digital marketing and data analysis roles.</p>
+                        
+                        <!-- Path Details -->
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Duration:</span>
+                                <span class="font-semibold text-text-primary">2-3 months</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Skill Level:</span>
+                                <span class="font-semibold text-warning">Intermediate</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Certification:</span>
+                                <span class="font-semibold text-success">Google Official</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Skills Tags -->
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-secondary-50 text-secondary px-3 py-1 rounded-full text-sm">GA4</span>
+                            <span class="bg-secondary-50 text-secondary px-3 py-1 rounded-full text-sm">Data Analysis</span>
+                            <span class="bg-secondary-50 text-secondary px-3 py-1 rounded-full text-sm">Reporting</span>
+                        </div>
+                        
+                        <!-- Progress Bar -->
+                        <div class="mb-4">
+                            <div class="flex justify-between text-sm text-text-secondary mb-2">
+                                <span>Progress</span>
+                                <span>0/12 modules</span>
+                            </div>
+                            <div class="w-full bg-border-light rounded-full h-2">
+                                <div class="bg-secondary h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-secondary w-full group-hover:bg-secondary-700 transition-colors duration-300">
+                            Start Certification
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Gap Analysis -->
+    <section class="section-padding bg-gradient-to-r from-primary-50 to-secondary-50">
+        <div class="container-custom">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Content -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-6">
+                        AI-Powered Skill Gap Analysis
+                    </h2>
+                    <p class="text-xl text-text-secondary mb-8">
+                        Get personalized course recommendations based on your assessment results and career goals. Our AI identifies exactly what you need to learn next.
+                    </p>
+                    
+                    <!-- Features List -->
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-1">Personalized Learning Paths</h4>
+                                <p class="text-text-secondary">Custom curricula based on your current skills and target roles</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-secondary rounded-full flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-1">Industry Trend Integration</h4>
+                                <p class="text-text-secondary">Stay ahead with courses on emerging skills and technologies</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-warning rounded-full flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-1">ROI Tracking</h4>
+                                <p class="text-text-secondary">Monitor your learning investment and career impact</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="skills_assessment_portal.html" class="btn-primary">
+                        Get My Skill Analysis
+                        <svg class="w-5 h-5 inline ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <!-- Skill Gap Visualization -->
+                <div class="bg-surface rounded-2xl shadow-overlay p-8">
+                    <h3 class="text-xl font-bold text-text-primary mb-6 text-center">Your Skill Gap Analysis</h3>
+                    
+                    <!-- Current Skills -->
+                    <div class="mb-6">
+                        <h4 class="font-semibold text-text-primary mb-3">Current Strengths</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-text-secondary">JavaScript</span>
+                                <div class="flex items-center">
+                                    <div class="w-24 bg-border-light rounded-full h-2 mr-3">
+                                        <div class="bg-success h-2 rounded-full" style="width: 85%"></div>
+                                    </div>
+                                    <span class="text-sm font-semibold text-success">85%</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-text-secondary">Project Management</span>
+                                <div class="flex items-center">
+                                    <div class="w-24 bg-border-light rounded-full h-2 mr-3">
+                                        <div class="bg-success h-2 rounded-full" style="width: 78%"></div>
+                                    </div>
+                                    <span class="text-sm font-semibold text-success">78%</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-text-secondary">Communication</span>
+                                <div class="flex items-center">
+                                    <div class="w-24 bg-border-light rounded-full h-2 mr-3">
+                                        <div class="bg-success h-2 rounded-full" style="width: 92%"></div>
+                                    </div>
+                                    <span class="text-sm font-semibold text-success">92%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill Gaps -->
+                    <div class="mb-6">
+                        <h4 class="font-semibold text-text-primary mb-3">Areas for Growth</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-text-secondary">Machine Learning</span>
+                                <div class="flex items-center">
+                                    <div class="w-24 bg-border-light rounded-full h-2 mr-3">
+                                        <div class="bg-warning h-2 rounded-full" style="width: 25%"></div>
+                                    </div>
+                                    <span class="text-sm font-semibold text-warning">25%</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-text-secondary">Data Visualization</span>
+                                <div class="flex items-center">
+                                    <div class="w-24 bg-border-light rounded-full h-2 mr-3">
+                                        <div class="bg-warning h-2 rounded-full" style="width: 35%"></div>
+                                    </div>
+                                    <span class="text-sm font-semibold text-warning">35%</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-text-secondary">Cloud Architecture</span>
+                                <div class="flex items-center">
+                                    <div class="w-24 bg-border-light rounded-full h-2 mr-3">
+                                        <div class="bg-error h-2 rounded-full" style="width: 15%"></div>
+                                    </div>
+                                    <span class="text-sm font-semibold text-error">15%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Recommended Action -->
+                    <div class="bg-primary-50 border border-primary-100 rounded-lg p-4">
+                        <h4 class="font-semibold text-primary-600 mb-2">Recommended Next Step</h4>
+                        <p class="text-primary-700 text-sm mb-3">Start with "Complete Data Science Mastery" to build your ML and visualization skills.</p>
+                        <button class="btn-primary text-sm py-2 px-4">View Recommended Path</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Learning Features -->
+    <section class="section-padding bg-surface">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Learn Together, Grow Faster
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Join study groups, participate in expert Q&A sessions, and connect with peers on similar learning journeys
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Study Groups -->
+                <div class="card text-center group hover:shadow-celebration transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-500 transition-colors duration-300">
+                        <svg class="w-8 h-8 text-primary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-4">Study Groups</h3>
+                    <p class="text-text-secondary mb-6">
+                        Join virtual study sessions with peers taking the same courses. Share insights, solve problems together, and stay motivated.
+                    </p>
+                    <div class="text-sm text-primary font-semibold mb-4">
+                        ✓ Weekly group sessions<br />
+                        ✓ Peer accountability<br />
+                        ✓ Collaborative projects
+                    </div>
+                    <a href="community_network.html" class="btn-primary">Join Study Groups</a>
+                </div>
+                
+                <!-- Expert Q&A -->
+                <div class="card text-center group hover:shadow-celebration transition-all duration-300">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary-500 transition-colors duration-300">
+                        <svg class="w-8 h-8 text-secondary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-4">Expert Q&A Sessions</h3>
+                    <p class="text-text-secondary mb-6">
+                        Get your questions answered by industry professionals and course instructors in live Q&A sessions.
+                    </p>
+                    <div class="text-sm text-secondary font-semibold mb-4">
+                        ✓ Live expert sessions<br />
+                        ✓ Industry insights<br />
+                        ✓ Career guidance
+                    </div>
+                    <button class="btn-secondary">Ask Experts</button>
+                </div>
+                
+                <!-- Peer Discussions -->
+                <div class="card text-center group hover:shadow-celebration transition-all duration-300">
+                    <div class="w-16 h-16 bg-warning-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-warning-500 transition-colors duration-300">
+                        <svg class="w-8 h-8 text-warning group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2v-1M15 8V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-4">Peer Discussions</h3>
+                    <p class="text-text-secondary mb-6">
+                        Engage in course-specific discussions, share resources, and learn from diverse perspectives and experiences.
+                    </p>
+                    <div class="text-sm text-warning font-semibold mb-4">
+                        ✓ Course forums<br />
+                        ✓ Resource sharing<br />
+                        ✓ Networking opportunities
+                    </div>
+                    <button class="bg-warning text-white px-6 py-3 rounded-lg font-semibold hover:bg-warning-600 transition-colors duration-300">Join Discussions</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gamification & Progress Tracking -->
+    <section class="section-padding bg-gradient-to-r from-primary-50 to-secondary-50">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Track Your Progress & Celebrate Wins
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Stay motivated with achievement badges, learning streaks, and skill level advancement
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Achievement Dashboard -->
+                <div class="bg-surface rounded-2xl shadow-overlay p-8">
+                    <h3 class="text-2xl font-bold text-text-primary mb-6 text-center">Your Learning Dashboard</h3>
+                    
+                    <!-- Current Streak -->
+                    <div class="bg-warning-50 border border-warning-100 rounded-lg p-6 mb-6">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h4 class="text-2xl font-bold text-warning-600">7 Days</h4>
+                                <p class="text-warning-700">Learning Streak</p>
+                            </div>
+                            <div class="text-4xl">🔥</div>
+                        </div>
+                        <div class="mt-4">
+                            <div class="w-full bg-warning-100 rounded-full h-2">
+                                <div class="bg-warning-500 h-2 rounded-full" style="width: 70%"></div>
+                            </div>
+                            <p class="text-sm text-warning-600 mt-2">3 more days to reach 10-day milestone!</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Recent Achievements -->
+                    <div class="mb-6">
+                        <h4 class="font-semibold text-text-primary mb-4">Recent Achievements</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center p-3 bg-success-50 border border-success-100 rounded-lg">
+                                <div class="w-10 h-10 bg-success rounded-full flex items-center justify-center mr-3">
+                                    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-success-600">First Course Completed!</h5>
+                                    <p class="text-sm text-success-700">Finished "Introduction to Python"</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center p-3 bg-primary-50 border border-primary-100 rounded-lg">
+                                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-3">
+                                    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-primary-600">Skill Level Up!</h5>
+                                    <p class="text-sm text-primary-700">JavaScript: Beginner → Intermediate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- XP Progress -->
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="font-semibold text-text-primary">Experience Points</h4>
+                            <span class="text-sm text-text-secondary">2,450 / 3,000 XP</span>
+                        </div>
+                        <div class="w-full bg-border-light rounded-full h-3">
+                            <div class="bg-gradient-to-r from-primary to-secondary h-3 rounded-full" style="width: 82%"></div>
+                        </div>
+                        <p class="text-sm text-text-secondary mt-2">550 XP to next level</p>
+                    </div>
+                </div>
+                
+                <!-- Features List -->
+                <div>
+                    <h3 class="text-2xl font-bold text-text-primary mb-8">Stay Motivated & Engaged</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-2">Achievement Badges</h4>
+                                <p class="text-text-secondary">Earn badges for completing courses, maintaining streaks, and reaching milestones. Show off your accomplishments!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-2">Skill Level Tracking</h4>
+                                <p class="text-text-secondary">Watch your skills progress from beginner to expert with detailed analytics and personalized feedback.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-warning-100 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-6 h-6 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-2">Learning Streaks</h4>
+                                <p class="text-text-secondary">Build momentum with daily learning streaks. The longer your streak, the more bonus XP you earn!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-2">ROI Tracking</h4>
+                                <p class="text-text-secondary">Monitor your learning investment and see how new skills translate to career opportunities and salary growth.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Learning Features -->
+    <section class="section-padding bg-surface">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Learn Anywhere, Anytime
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Optimized mobile learning with offline access, progress syncing, and bite-sized lessons for busy professionals
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Offline Learning -->
+                <div class="card text-center group hover:shadow-celebration transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-500 transition-colors duration-300">
+                        <svg class="w-8 h-8 text-primary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-text-primary mb-3">Offline Access</h3>
+                    <p class="text-text-secondary text-sm">
+                        Download courses for offline learning. Perfect for commutes, flights, or areas with poor connectivity.
+                    </p>
+                </div>
+                
+                <!-- Progress Sync -->
+                <div class="card text-center group hover:shadow-celebration transition-all duration-300">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary-500 transition-colors duration-300">
+                        <svg class="w-8 h-8 text-secondary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-text-primary mb-3">Progress Sync</h3>
+                    <p class="text-text-secondary text-sm">
+                        Seamlessly sync your progress across all devices. Start on mobile, continue on desktop.
+                    </p>
+                </div>
+                
+                <!-- Micro-Lessons -->
+                <div class="card text-center group hover:shadow-celebration transition-all duration-300">
+                    <div class="w-16 h-16 bg-warning-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-warning-500 transition-colors duration-300">
+                        <svg class="w-8 h-8 text-warning group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-text-primary mb-3">Bite-Sized Lessons</h3>
+                    <p class="text-text-secondary text-sm">
+                        Learn in 5-15 minute chunks. Perfect for busy schedules and maintaining consistent progress.
+                    </p>
+                </div>
+                
+                <!-- Audio Learning -->
+                <div class="card text-center group hover:shadow-celebration transition-all duration-300">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-accent-500 transition-colors duration-300">
+                        <svg class="w-8 h-8 text-accent group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-text-primary mb-3">Audio Content</h3>
+                    <p class="text-text-secondary text-sm">
+                        Listen to courses during commutes, workouts, or while multitasking. Learning made convenient.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Mobile App Preview -->
+            <div class="mt-16 text-center">
+                <div class="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl p-8 max-w-4xl mx-auto">
+                    <h3 class="text-2xl font-bold text-text-primary mb-4">Get the Mobile App</h3>
+                    <p class="text-text-secondary mb-6">Download our mobile app for the best learning experience on the go</p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button class="bg-text-primary text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center hover:bg-gray-800 transition-colors duration-300">
+                            <svg class="w-6 h-6 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                            </svg>
+                            Download for iOS
+                        </button>
+                        <button class="bg-text-primary text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center hover:bg-gray-800 transition-colors duration-300">
+                            <svg class="w-6 h-6 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                            </svg>
+                            Download for Android
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-16">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-primary mr-3" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L20 10L28 10L22 16L24 24L16 20L8 24L10 16L4 10L12 10L16 2Z"/>
+                            <circle cx="16" cy="16" r="3" fill="white"/>
+                        </svg>
+                        <span class="text-xl font-bold">CareerPath Navigator</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Accelerate your career with personalized learning pathways and expert-curated content.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Platform Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Platform</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="skills_assessment_portal.html" class="hover:text-white transition-colors duration-200">Skills Assessment</a></li>
+                        <li><a href="learning_hub.html" class="hover:text-white transition-colors duration-200">Learning Hub</a></li>
+                        <li><a href="opportunity_marketplace.html" class="hover:text-white transition-colors duration-200">Career Explorer</a></li>
+                        <li><a href="personal_dashboard.html" class="hover:text-white transition-colors duration-200">Dashboard</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Learning Resources -->
+                <div>
+                    <h4 class="font-semibold mb-4">Learning</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Course Catalog</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Certifications</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Study Groups</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Expert Sessions</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Support -->
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Help Center</a></li>
+                        <li><a href="community_network.html" class="hover:text-white transition-colors duration-200">Community</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 CareerPath Navigator. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter functionality
+        const filterTabs = document.querySelectorAll('.filter-tab');
+        const learningPaths = document.querySelectorAll('.learning-path-card');
+
+        filterTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                
+                // Update active tab
+                filterTabs.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter learning paths
+                learningPaths.forEach(path => {
+                    if (filter === 'all' || path.getAttribute('data-category') === filter) {
+                        path.style.display = 'block';
+                        path.classList.add('animation-fade-in');
+                    } else {
+                        path.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Add styles for filter tabs
+        const style = document.createElement('style');
+        style.textContent = `
+            .filter-tab {
+                @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center border-2 border-border text-text-secondary hover:border-primary hover:text-primary;
+            }
+            .filter-tab.active {
+                @apply bg-primary text-white border-primary;
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Initialize first tab as active
+        document.querySelector('.filter-tab[data-filter="all"]').classList.add('active');
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
