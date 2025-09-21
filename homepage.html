@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerPath Navigator - Your Next Career Move is Closer Than You Think</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Discover your career potential with AI-powered skills assessment, interview simulation, and personalized job matching. Transform uncertainty into career clarity." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fcareerpath3634back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background">
+    <!-- Navigation Header -->
+    <nav class="bg-surface shadow-soft sticky top-0 z-50">
+        <div class="container-custom">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="w-8 h-8 text-primary mr-3" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 2L20 10L28 10L22 16L24 24L16 20L8 24L10 16L4 10L12 10L16 2Z"/>
+                        <circle cx="16" cy="16" r="3" fill="white"/>
+                    </svg>
+                    <span class="text-xl font-bold text-primary">CareerPath Navigator</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="skills_assessment_portal.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Skills Assessment</a>
+                    <a href="opportunity_marketplace.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Career Explorer</a>
+                    <a href="learning_hub.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Interview Simulator</a>
+                    <a href="learning_hub.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Learning Hub</a>
+                    <a href="community_network.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Community</a>
+                    <a href="personal_dashboard.html" class="btn-primary">Dashboard</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-surface border-t border-border-light">
+                    <a href="skills_assessment_portal.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Skills Assessment</a>
+                    <a href="opportunity_marketplace.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Career Explorer</a>
+                    <a href="learning_hub.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Interview Simulator</a>
+                    <a href="learning_hub.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Learning Hub</a>
+                    <a href="community_network.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Community</a>
+                    <a href="personal_dashboard.html" class="block px-3 py-2 text-primary font-semibold">Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Interactive Assessment Preview -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-secondary-50 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5"></div>
+        <div class="container-custom relative z-10 py-20 lg:py-32">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="text-center lg:text-left">
+                    <h1 class="hero-text text-gradient mb-6 animation-fade-in">
+                        Your next career move is closer than you think
+                    </h1>
+                    <p class="text-xl text-text-secondary mb-8 max-w-2xl animation-slide-up">
+                        Transform uncertainty into clarity with AI-powered skills discovery, realistic interview practice, and personalized career matching that builds confidence.
+                    </p>
+                    
+                    <!-- Dual CTAs -->
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8 animation-slide-up">
+                        <a href="skills_assessment_portal.html" class="btn-primary text-center">
+                            <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Discover Your Path
+                        </a>
+                        <a href="learning_hub.html" class="btn-outline text-center">
+                            <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                            </svg>
+                            Practice Interviews
+                        </a>
+                    </div>
+                    
+                    <!-- Real-time Metrics -->
+                    <div class="flex flex-col sm:flex-row gap-6 text-sm text-text-secondary">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-success rounded-full animate-pulse mr-2"></div>
+                            <span><strong class="text-primary" id="active-users">1,247</strong> users taking assessments now</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 text-warning mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <span><strong class="text-primary">94%</strong> success rate this month</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Interactive Assessment Preview -->
+                <div class="bg-surface rounded-2xl shadow-overlay p-8 animation-slide-up">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-text-primary mb-2">Quick Skills Preview</h3>
+                        <p class="text-text-secondary">Answer 3 questions to see your potential</p>
+                    </div>
+                    
+                    <!-- Question 1 -->
+                    <div class="mb-6" id="question-1">
+                        <h4 class="font-semibold text-text-primary mb-4">1. Which activity energizes you most?</h4>
+                        <div class="space-y-3">
+                            <label class="flex items-center p-3 border border-border rounded-lg cursor-pointer hover:bg-primary-50 transition-colors duration-200">
+                                <input type="radio" name="q1" value="problem-solving" class="mr-3" />
+                                <span>Solving complex problems step by step</span>
+                            </label>
+                            <label class="flex items-center p-3 border border-border rounded-lg cursor-pointer hover:bg-primary-50 transition-colors duration-200">
+                                <input type="radio" name="q1" value="creative" class="mr-3" />
+                                <span>Creating something new and innovative</span>
+                            </label>
+                            <label class="flex items-center p-3 border border-border rounded-lg cursor-pointer hover:bg-primary-50 transition-colors duration-200">
+                                <input type="radio" name="q1" value="helping" class="mr-3" />
+                                <span>Helping others achieve their goals</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 2 (Hidden initially) -->
+                    <div class="mb-6 hidden" id="question-2">
+                        <h4 class="font-semibold text-text-primary mb-4">2. Your ideal work environment is:</h4>
+                        <div class="space-y-3">
+                            <label class="flex items-center p-3 border border-border rounded-lg cursor-pointer hover:bg-primary-50 transition-colors duration-200">
+                                <input type="radio" name="q2" value="collaborative" class="mr-3" />
+                                <span>Collaborative team setting</span>
+                            </label>
+                            <label class="flex items-center p-3 border border-border rounded-lg cursor-pointer hover:bg-primary-50 transition-colors duration-200">
+                                <input type="radio" name="q2" value="independent" class="mr-3" />
+                                <span>Independent with flexible schedule</span>
+                            </label>
+                            <label class="flex items-center p-3 border border-border rounded-lg cursor-pointer hover:bg-primary-50 transition-colors duration-200">
+                                <input type="radio" name="q2" value="fast-paced" class="mr-3" />
+                                <span>Fast-paced, dynamic environment</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 3 (Hidden initially) -->
+                    <div class="mb-6 hidden" id="question-3">
+                        <h4 class="font-semibold text-text-primary mb-4">3. What motivates you most in work?</h4>
+                        <div class="space-y-3">
+                            <label class="flex items-center p-3 border border-border rounded-lg cursor-pointer hover:bg-primary-50 transition-colors duration-200">
+                                <input type="radio" name="q3" value="impact" class="mr-3" />
+                                <span>Making a meaningful impact</span>
+                            </label>
+                            <label class="flex items-center p-3 border border-border rounded-lg cursor-pointer hover:bg-primary-50 transition-colors duration-200">
+                                <input type="radio" name="q3" value="growth" class="mr-3" />
+                                <span>Continuous learning and growth</span>
+                            </label>
+                            <label class="flex items-center p-3 border border-border rounded-lg cursor-pointer hover:bg-primary-50 transition-colors duration-200">
+                                <input type="radio" name="q3" value="recognition" class="mr-3" />
+                                <span>Recognition and advancement</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Results Preview (Hidden initially) -->
+                    <div class="hidden text-center" id="preview-results">
+                        <div class="bg-success-50 border border-success-100 rounded-lg p-4 mb-4">
+                            <h4 class="font-semibold text-success-600 mb-2">Great potential detected!</h4>
+                            <p class="text-success-700 text-sm">Based on your answers, you show strong alignment with Product Management, UX Design, and Data Analysis roles.</p>
+                        </div>
+                        <a href="skills_assessment_portal.html" class="btn-primary w-full">Get Full Assessment</a>
+                    </div>
+                    
+                    <!-- Progress Bar -->
+                    <div class="mt-6">
+                        <div class="flex justify-between text-sm text-text-secondary mb-2">
+                            <span>Progress</span>
+                            <span id="progress-text">0/3</span>
+                        </div>
+                        <div class="w-full bg-border-light rounded-full h-2">
+                            <div class="bg-primary h-2 rounded-full transition-all duration-300" id="progress-bar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Showcase -->
+    <section class="section-padding bg-surface">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Why CareerPath Navigator Works
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Our unique three-pillar approach combines cutting-edge AI with proven career development principles
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- AI-Powered Skills Discovery -->
+                <div class="card text-center group hover:shadow-celebration transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-500 transition-colors duration-300">
+                        <svg class="w-8 h-8 text-primary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-4">AI-Powered Skills Discovery</h3>
+                    <p class="text-text-secondary mb-6">
+                        Uncover hidden talents and potential career paths through advanced assessment algorithms that analyze your unique combination of skills, interests, and values.
+                    </p>
+                    <div class="text-sm text-primary font-semibold">
+                        ✓ 15-minute comprehensive assessment<br />
+                        ✓ 200+ career path matches<br />
+                        ✓ Personalized skill gap analysis
+                    </div>
+                </div>
+                
+                <!-- Realistic Interview Practice -->
+                <div class="card text-center group hover:shadow-celebration transition-all duration-300">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary-500 transition-colors duration-300">
+                        <svg class="w-8 h-8 text-secondary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-4">Realistic Interview Practice</h3>
+                    <p class="text-text-secondary mb-6">
+                        Build confidence through role-specific interview simulations with AI-powered feedback, helping you master both technical and behavioral questions.
+                    </p>
+                    <div class="text-sm text-secondary font-semibold">
+                        ✓ Industry-specific scenarios<br />
+                        ✓ Real-time performance feedback<br />
+                        ✓ Confidence tracking & improvement
+                    </div>
+                </div>
+                
+                <!-- Personalized Career Matching -->
+                <div class="card text-center group hover:shadow-celebration transition-all duration-300">
+                    <div class="w-16 h-16 bg-warning-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-warning-500 transition-colors duration-300">
+                        <svg class="w-8 h-8 text-warning group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-4">Personalized Career Matching</h3>
+                    <p class="text-text-secondary mb-6">
+                        Connect your unique profile to real opportunities with intelligent matching that considers skills, preferences, salary expectations, and growth potential.
+                    </p>
+                    <div class="text-sm text-warning font-semibold">
+                        ✓ Smart job recommendations<br />
+                        ✓ Company culture matching<br />
+                        ✓ Salary & growth projections
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Carousel -->
+    <section class="section-padding bg-gradient-to-r from-primary-50 to-secondary-50">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Real Transformations, Real Results
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    See how others discovered their perfect career path
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Success Story 1 -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sarah Chen" class="w-12 h-12 rounded-full object-cover mr-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-text-primary">Sarah Chen</h4>
+                            <p class="text-sm text-text-secondary">Marketing → Product Manager</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4">
+                        "The skills assessment revealed my analytical strengths I never knew I had. Six months later, I landed my dream product manager role at a tech startup."
+                    </p>
+                    <div class="flex items-center text-sm text-success">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>40% salary increase</span>
+                    </div>
+                </div>
+                
+                <!-- Success Story 2 -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Marcus Johnson" class="w-12 h-12 rounded-full object-cover mr-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-text-primary">Marcus Johnson</h4>
+                            <p class="text-sm text-text-secondary">Recent Graduate → UX Designer</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4">
+                        "From uncertain graduate to confident UX designer in 4 months. The interview practice gave me the confidence to ace my first tech interview."
+                    </p>
+                    <div class="flex items-center text-sm text-success">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>First job in dream field</span>
+                    </div>
+                </div>
+                
+                <!-- Success Story 3 -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Elena Rodriguez" class="w-12 h-12 rounded-full object-cover mr-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-text-primary">Elena Rodriguez</h4>
+                            <p class="text-sm text-text-secondary">Teacher → Data Analyst</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4">
+                        "Career change at 35 seemed impossible until I discovered my hidden analytical skills. Now I'm thriving as a data analyst at a Fortune 500 company."
+                    </p>
+                    <div class="flex items-center text-sm text-success">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Successful career pivot</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Career Path Visualization -->
+    <section class="section-padding bg-surface">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Explore Career Possibilities
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Hover over industries to discover salary ranges and growth trajectories
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Technology -->
+                <div class="career-path-card group cursor-pointer" data-industry="technology">
+                    <div class="card group-hover:shadow-celebration transition-all duration-300 h-full">
+                        <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-500 transition-colors duration-300">
+                            <svg class="w-6 h-6 text-primary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-text-primary mb-2">Technology</h3>
+                        <p class="text-text-secondary text-sm mb-4">Software development, AI, cybersecurity, and emerging tech roles</p>
+                        <div class="career-details hidden group-hover:block">
+                            <div class="text-sm space-y-2">
+                                <div class="flex justify-between">
+                                    <span class="text-text-secondary">Avg. Salary:</span>
+                                    <span class="font-semibold text-success">$85K - $150K</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-text-secondary">Growth Rate:</span>
+                                    <span class="font-semibold text-success">+22%</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-text-secondary">Remote Options:</span>
+                                    <span class="font-semibold text-primary">95%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Healthcare -->
+                <div class="career-path-card group cursor-pointer" data-industry="healthcare">
+                    <div class="card group-hover:shadow-celebration transition-all duration-300 h-full">
+                        <div class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-secondary-500 transition-colors duration-300">
+                            <svg class="w-6 h-6 text-secondary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-text-primary mb-2">Healthcare</h3>
+                        <p class="text-text-secondary text-sm mb-4">Medical, nursing, therapy, and health administration roles</p>
+                        <div class="career-details hidden group-hover:block">
+                            <div class="text-sm space-y-2">
+                                <div class="flex justify-between">
+                                    <span class="text-text-secondary">Avg. Salary:</span>
+                                    <span class="font-semibold text-success">$65K - $120K</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-text-secondary">Growth Rate:</span>
+                                    <span class="font-semibold text-success">+16%</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-text-secondary">Job Security:</span>
+                                    <span class="font-semibold text-primary">Excellent</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Finance -->
+                <div class="career-path-card group cursor-pointer" data-industry="finance">
+                    <div class="card group-hover:shadow-celebration transition-all duration-300 h-full">
+                        <div class="w-12 h-12 bg-warning-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-warning-500 transition-colors duration-300">
+                            <svg class="w-6 h-6 text-warning group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-text-primary mb-2">Finance</h3>
+                        <p class="text-text-secondary text-sm mb-4">Banking, investment, accounting, and financial planning</p>
+                        <div class="career-details hidden group-hover:block">
+                            <div class="text-sm space-y-2">
+                                <div class="flex justify-between">
+                                    <span class="text-text-secondary">Avg. Salary:</span>
+                                    <span class="font-semibold text-success">$70K - $140K</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-text-secondary">Growth Rate:</span>
+                                    <span class="font-semibold text-success">+8%</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-text-secondary">Bonus Potential:</span>
+                                    <span class="font-semibold text-primary">High</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Creative -->
+                <div class="career-path-card group cursor-pointer" data-industry="creative">
+                    <div class="card group-hover:shadow-celebration transition-all duration-300 h-full">
+                        <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-accent-500 transition-colors duration-300">
+                            <svg class="w-6 h-6 text-accent group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-text-primary mb-2">Creative</h3>
+                        <p class="text-text-secondary text-sm mb-4">Design, marketing, content creation, and media production</p>
+                        <div class="career-details hidden group-hover:block">
+                            <div class="text-sm space-y-2">
+                                <div class="flex justify-between">
+                                    <span class="text-text-secondary">Avg. Salary:</span>
+                                    <span class="font-semibold text-success">$50K - $95K</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-text-secondary">Growth Rate:</span>
+                                    <span class="font-semibold text-success">+13%</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-text-secondary">Freelance Ops:</span>
+                                    <span class="font-semibold text-primary">Excellent</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="opportunity_marketplace.html" class="btn-primary">
+                    Explore All Career Paths
+                    <svg class="w-5 h-5 inline ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Signals & Partnerships -->
+    <section class="section-padding bg-gradient-to-r from-primary-50 to-secondary-50">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Trusted by Professionals Worldwide
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Partnering with leading institutions and career experts
+                </p>
+            </div>
+            
+            <!-- Success Metrics -->
+            <div class="grid md:grid-cols-4 gap-8 mb-16">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary mb-2">50K+</div>
+                    <div class="text-text-secondary">Career Assessments Completed</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-secondary mb-2">94%</div>
+                    <div class="text-text-secondary">Interview Success Rate</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-warning mb-2">15K+</div>
+                    <div class="text-text-secondary">Successful Job Placements</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-accent mb-2">500+</div>
+                    <div class="text-text-secondary">Partner Companies</div>
+                </div>
+            </div>
+            
+            <!-- Partnership Logos -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-60">
+                <div class="text-center">
+                    <div class="bg-surface rounded-lg p-4 shadow-soft">
+                        <div class="text-lg font-bold text-text-primary">Stanford Career Center</div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-surface rounded-lg p-4 shadow-soft">
+                        <div class="text-lg font-bold text-text-primary">MIT Career Services</div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-surface rounded-lg p-4 shadow-soft">
+                        <div class="text-lg font-bold text-text-primary">Career Coach Institute</div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-surface rounded-lg p-4 shadow-soft">
+                        <div class="text-lg font-bold text-text-primary">HR Excellence Network</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section-padding bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container-custom text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Ready to Discover Your Perfect Career Path?
+            </h2>
+            <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                Join thousands of professionals who've transformed their careers with our AI-powered platform. Your next opportunity is just one assessment away.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <a href="skills_assessment_portal.html" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200">
+                    Start Free Assessment
+                </a>
+                <a href="learning_hub.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors duration-200">
+                    Try Interview Simulator
+                </a>
+            </div>
+            
+            <div class="text-sm opacity-75">
+                ✓ No credit card required  ✓ Complete in 15 minutes  ✓ Instant results
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-16">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-primary mr-3" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L20 10L28 10L22 16L24 24L16 20L8 24L10 16L4 10L12 10L16 2Z"/>
+                            <circle cx="16" cy="16" r="3" fill="white"/>
+                        </svg>
+                        <span class="text-xl font-bold">CareerPath Navigator</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Transforming careers through AI-powered discovery, realistic practice, and personalized guidance.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Platform Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Platform</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="skills_assessment_portal.html" class="hover:text-white transition-colors duration-200">Skills Assessment</a></li>
+                        <li><a href="learning_hub.html" class="hover:text-white transition-colors duration-200">Interview Simulator</a></li>
+                        <li><a href="opportunity_marketplace.html" class="hover:text-white transition-colors duration-200">Career Explorer</a></li>
+                        <li><a href="personal_dashboard.html" class="hover:text-white transition-colors duration-200">Dashboard</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Resources -->
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="learning_hub.html" class="hover:text-white transition-colors duration-200">Learning Hub</a></li>
+                        <li><a href="community_network.html" class="hover:text-white transition-colors duration-200">Community</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Career Guides</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Success Stories</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Support -->
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 CareerPath Navigator. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Interactive Assessment Preview
+        let currentQuestion = 1;
+        const totalQuestions = 3;
+        
+        function updateProgress() {
+            const progressBar = document.getElementById('progress-bar');
+            const progressText = document.getElementById('progress-text');
+            const percentage = (currentQuestion - 1) / totalQuestions * 100;
+            
+            progressBar.style.width = percentage + '%';
+            progressText.textContent = (currentQuestion - 1) + '/' + totalQuestions;
+        }
+        
+        function showNextQuestion() {
+            if (currentQuestion <= totalQuestions) {
+                const currentQuestionEl = document.getElementById('question-' + currentQuestion);
+                if (currentQuestionEl) {
+                    currentQuestionEl.classList.add('hidden');
+                }
+                
+                currentQuestion++;
+                
+                if (currentQuestion <= totalQuestions) {
+                    const nextQuestionEl = document.getElementById('question-' + currentQuestion);
+                    if (nextQuestionEl) {
+                        nextQuestionEl.classList.remove('hidden');
+                        nextQuestionEl.classList.add('animation-slide-up');
+                    }
+                } else {
+                    // Show results
+                    document.getElementById('preview-results').classList.remove('hidden');
+                    document.getElementById('preview-results').classList.add('animation-celebration');
+                }
+                
+                updateProgress();
+            }
+        }
+        
+        // Add event listeners to radio buttons
+        document.querySelectorAll('input[type="radio"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                setTimeout(showNextQuestion, 500);
+            });
+        });
+        
+        // Real-time counter animation
+        function animateCounter() {
+            const counter = document.getElementById('active-users');
+            const baseCount = 1247;
+            const variation = Math.floor(Math.random() * 20) - 10;
+            counter.textContent = (baseCount + variation).toLocaleString();
+        }
+        
+        // Update counter every 5 seconds
+        setInterval(animateCounter, 5000);
+        
+        // Initialize progress
+        updateProgress();
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
